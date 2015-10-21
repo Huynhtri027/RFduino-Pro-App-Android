@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RFduino Pro Example</string>
+    <string name="title_activity_devices">Devices</string>
+    <string name="action_devices">Devices</string>
+
+    <string name="ldr">LDR</string>
+    <string name="button">BUTTON</string>
+    <string name="led">LED</string>
+
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="press">Press To Light</string>
+
+    <string name="awake">Awake</string>
+    <string name="asleep">Asleep (press button to awaken)</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="waiting">Waiting for connection...</string>
+
+    <!-- Menu items -->
+    <string name="menu_done">Done</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_refresh">Refresh</string>
+
+    <!-- Devices list -->
+    <string name="device_rename">Rename</string>
+    <string name="device_newname_prompt">Enter New Name</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+ </resources>

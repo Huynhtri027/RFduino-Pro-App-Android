@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivityFragment">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/deviceLayout"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:layout_width="69dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/rfduino_pro" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DISCONNECTED"
+            android:id="@+id/deviceName"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/deviceLayout"
+            android:layout_alignEnd="@+id/deviceLayout"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffff0000" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:clickable="true"
+        android:enabled="true"
+        android:background="@drawable/btn_background"
+        android:text="@string/press"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0000"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/progressBar"
+        android:max="1023"
+        android:progressTintMode="add"
+        android:progressDrawable="@drawable/progress_background"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ldr"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/button"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/led"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/pushButton"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView5"
+        android:text="@string/waiting"
+        android:layout_alignBottom="@+id/deviceLayout"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/off"
+        android:id="@+id/pushButton"
+        android:enabled="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/pushbtn_background"
+        android:clickable="false" />
+
+</RelativeLayout>

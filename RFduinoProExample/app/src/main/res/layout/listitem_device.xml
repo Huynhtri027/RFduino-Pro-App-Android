@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/rfduino_pro"
+        android:layout_gravity="center" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_weight=".55">
+        <TextView android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:singleLine="true" />
+
+        <TextView android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rename"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:background="@drawable/btn_small_background"
+        android:layout_margin="10dp"
+        android:text="@string/device_rename"
+        android:padding="5dp" />
+
+</LinearLayout>
